@@ -1,5 +1,6 @@
 {
     "name": "stillat/statamic-template-resolver",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Stillat\\StatamicTemplateResolver\\": "src"
