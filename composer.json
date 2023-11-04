@@ -1,0 +1,27 @@
+{
+    "name": "stillat/statamic-template-resolver",
+    "autoload": {
+        "psr-4": {
+            "Stillat\\StatamicTemplateResolver\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Template Resolver",
+            "description": "Provides utilities to resolve templates based on an entry's collection or blueprint handles, with support for a fallback template."
+        },
+        "laravel": {
+            "providers": [
+            ]
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "statamic/cms": "^4"
+    },
+    "config": {
+        "allow-plugins": {
+            "pixelfear/composer-dist-plugin": true
+        }
+    }
+}
