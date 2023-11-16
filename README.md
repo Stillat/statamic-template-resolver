@@ -43,12 +43,12 @@ if ($manager->hasTemplate($collection, $blueprint)) {
 
 ```
 
-The `hasTemplate` method will return `true` if a specific template *or* the default template exists. To create a default template, create a file named `default.antlers.html` or `default.blade.php` at the root of the template folder.
+The `hasTemplate` method will return `true` if a specific template *or* the default template exists. To create a default template, create a file named `_default.antlers.html` or `_default.blade.php` at the root of the template folder.
 
 In our example, the default template would need to be placed here:
 
 ```
-views/social_media_images/default.antlers.html
+views/social_media_images/_default.antlers.html
 ```
 
 Specific collection/blueprint templates are stored within a nested directory structure using the following format:

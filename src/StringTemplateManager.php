@@ -47,7 +47,7 @@ class StringTemplateManager
         }
 
         foreach ($this->templateExtensions as $extension) {
-            $fileName = $this->templateDirectory.'default'.$extension;
+            $fileName = $this->templateDirectory.'_default'.$extension;
 
             if (file_exists($fileName)) {
                 $this->hasDefaultTemplate = true;
@@ -127,6 +127,10 @@ class StringTemplateManager
 
         foreach ($this->templateExtensions as $extension) {
             $templatePath = $this->templateDirectory.$collectionHandle.'/'.$blueprintHandle.$extension;
+
+            if (! file_exists($templatePath)) {
+                $templatePath = $this->templateDirectory.$collectionHandle.'/_default'.$extension;
+            }
 
             if (file_exists($templatePath)) {
                 $templateDetails = [
