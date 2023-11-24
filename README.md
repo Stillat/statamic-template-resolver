@@ -1,6 +1,6 @@
-# Statamic Template Resolver
+# Template Resolver for Statamic
 
-Statamic Template Resolver is a simple utility addon, intended to be used by other addons. It provides a simple utility for selecting and rendering a template based on an entry's *blueprint* and *collection*, with support for a fallback default template.
+Template Resolver for Statamic is a simple utility addon, intended to be used by other addons. It provides a simple utility for selecting and rendering a template based on an entry's *blueprint* and *collection*, with support for a fallback default template.
 
 Example use-cases:
 
